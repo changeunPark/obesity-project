@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"	
+	android:background="@drawable/tab4_fb"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+	    
+	    android:gravity="center_vertical|center_horizontal"
+			android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginBottom="100dp"
+		android:id="@+id/relativeLayout41">
+		<!-- <Button android:text="혈당 측정" android:id="@+id/button_layer4_1" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></Button> 
+			<Button android:text="나의 혈당 보기" android:id="@+id/button_layer4_2" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></Button> 
+			<Button android:text="약물 순응도" android:id="@+id/button_layer4_3" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></Button> -->
+<!-- 
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="18px"
+			android:background="@drawable/outborder"
+			android:id="@+id/relativeLayout4_1">
+
+			<RelativeLayout
+				android:background="@drawable/border"
+				android:layout_width="match_parent"
+				android:gravity="center_horizontal"
+				android:layout_height="match_parent">  -->
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#000000"
+					android:textSize="15dip"
+					android:id="@+id/textview_4_1"
+					android:text="스트레스에 대한\n자가잔단을 시작합니다.\n" />
+<!-- 
+			</RelativeLayout>-->
+
+			<ImageButton android:text=""
+				android:background="@drawable/start"
+				android:id="@+id/button_layer4_1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></ImageButton>
+<!-- 
+		</RelativeLayout> -->
+	</LinearLayout>
+</LinearLayout>

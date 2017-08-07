@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+		<LinearLayout
+		     android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+		    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food1" />
+		</LinearLayout>
+        <LinearLayout
+		     android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+		    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food2" />
+		</LinearLayout><LinearLayout
+		     android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+		    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food3" />
+		</LinearLayout><LinearLayout
+		     android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+		    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food4" />
+		</LinearLayout>
+        
+		<!-- 레이아웃 4 -->
+		<RelativeLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		    <TextView
+		        		        android:gravity="center_horizontal"
+		        android:id="@+id/question"
+		        android:layout_centerVertical="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/question4"/>
+		    <RatingBar
+		        android:layout_centerHorizontal="true"
+		        android:id="@+id/ratingbar"
+		        android:layout_below="@+id/question"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:stepSize="1"
+				/>		
+				<TextView
+				    		        android:gravity="center_horizontal"
+		        android:layout_centerHorizontal="true"
+		        android:id="@+id/ratingtext"
+		        android:text=""
+		        android:layout_below="@+id/ratingbar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				/>	    
+		</RelativeLayout>
+		
+    </ViewFlipper>
+    
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="previous" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="next" />
+    </LinearLayout>
+</LinearLayout>

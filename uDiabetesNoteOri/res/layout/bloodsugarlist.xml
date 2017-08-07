@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+
+	<TableLayout
+		android:layout_height="wrap_content"
+		android:id="@+id/tableLayout99911"
+		android:layout_width="fill_parent"
+		android:stretchColumns="*">
+
+		<TableRow>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/relativeLayout99911"
+				android:layout_height="match_parent">
+				<!-- <TextView android:layout_weight="43" 
+					android:textColor="#000000" android:focusable="false" 
+					android:layout_width="0dip" android:textSize="15dip" 
+					android:textStyle="bold" android:layout_marginLeft="0dip" 
+					android:layout_height="wrap_content" android:layout_centerVertical="true" 
+					android:id="@+id/bloodsugar_date" android:text="1"> 
+					</TextView> -->
+
+				<TextView
+					android:layout_weight="24"
+					android:textSize="18dip"
+					android:textColor="#000000"
+					android:textStyle="bold"
+					android:focusable="false"
+					android:layout_toRightOf="@+id/bloodsugar_date"
+					android:layout_width="0dip"
+					android:layout_marginLeft="0dip"
+					android:layout_marginRight="0dip"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:id="@+id/bloodsugar_time"
+					android:text="2">
+				</TextView>
+
+				<TextView
+					android:textSize="18dip"
+					android:textColor="#0000FF"
+					android:textStyle="bold"
+					android:focusable="false"
+					android:layout_toRightOf="@+id/bloodsugar_time"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/bloodsugar_value"
+					android:text="3">
+				</TextView>
+
+			</LinearLayout>
+
+		</TableRow>
+		<TableRow>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:id="@+id/relativeLayout99922"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_height="match_parent">
+
+
+				<TextView android:textSize="18dip"
+					android:textColor="#000000"
+					android:focusable="false"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:id="@+id/bloodsugar_memo"
+					android:text="4">
+				</TextView>
+
+
+
+			</LinearLayout>
+
+		</TableRow>
+
+	</TableLayout>
+
+
+
+</RelativeLayout>

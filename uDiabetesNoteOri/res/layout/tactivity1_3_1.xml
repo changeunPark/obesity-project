@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_margin="10dp"
+	android:layout_gravity="center_vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+
+<!-- ###################이상체중########################## -->			
+	<WebView 
+	    android:id="@+id/webview"    
+	    android:layout_width="fill_parent"        
+	    android:layout_height="wrap_content" />
+
+<!-- ###################표준체중계산법########################## -->		
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:src="@drawable/arrow01" />
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@+id/imageView1"
+		    android:text=" 복부 비만도"
+		    android:textColor="#000000"
+		    android:textSize="17dp" />
+
+	</RelativeLayout>
+
+	<TableLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:stretchColumns="0,2">
+
+	    <TableRow
+	        android:id="@+id/tableRow1"
+	        android:background="#DCDCDC"	      
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/textView3"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#000000"               
+	            android:layout_gravity="center_horizontal"
+	            android:text="성 별" />
+	        
+	        <TextView
+	            android:id="@+id/textView4"
+	            android:layout_width="1dp"
+	            android:layout_height="wrap_content"
+	            android:textColor="#000000"
+				android:background="#FFFFFF"	      	            
+	            android:text="" />	        
+	        
+	        <TextView
+	            android:id="@+id/textView5"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#000000"
+	            android:layout_gravity="center_horizontal"				      
+	            android:text="허리·엉덩이 둘레비(WHR)" />	        
+	        
+	    </TableRow>
+
+<!-- ###################안쪽선########################## -->					    
+	    <TableRow
+	        android:id="@+id/tableRow2"
+	        android:background="#FFA500"	      
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+        
+	        <TextView
+	            android:id="@+id/textView6"
+	            android:layout_span="3"	            
+	            android:layout_height="1dp"
+	            android:textColor="#000000"
+				android:background="#FFFFFF"	      	            
+	            android:text="" />	     
+	     	        	   	        
+	    </TableRow>
+	    
+		<TableRow
+	        android:id="@+id/tableRow3"
+	        android:background="#FFB6C1"	      
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/textView7"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#000000"               
+	            android:layout_gravity="center_horizontal"
+	            android:text="남 자" />
+	        
+	        <TextView
+	            android:id="@+id/textView8"
+	            android:layout_width="1dp"
+	            android:layout_height="wrap_content"
+	            android:textColor="#000000"
+				android:background="#FFFFFF"	      	            
+	            android:text="" />	        
+	        
+	        <TextView
+	            android:id="@+id/textView9"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#000000"
+	            android:layout_gravity="center_horizontal"				      
+	            android:text="1이상 복부비만" />	        
+	        
+	    </TableRow>	    
+
+<!-- ###################안쪽선########################## -->					    
+	    <TableRow
+	        android:id="@+id/tableRow4"
+	        android:background="#FFA500"	      
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+        
+	        <TextView
+	            android:id="@+id/textView10"
+	            android:layout_span="3"	            
+	            android:layout_height="1dp"
+	            android:textColor="#000000"
+				android:background="#FFFFFF"	      	            
+	            android:text="" />	     
+	     	        	   	        
+	    </TableRow>
+	    
+		<TableRow
+	        android:id="@+id/tableRow5"
+	        android:background="#FFB6C1"	      
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/textView11"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#000000"               
+	            android:layout_gravity="center_horizontal"
+	            android:text="여 자" />
+	        
+	        <TextView
+	            android:id="@+id/textView12"
+	            android:layout_width="1dp"
+	            android:layout_height="wrap_content"
+	            android:textColor="#000000"
+				android:background="#FFFFFF"	      	            
+	            android:text="" />	        
+	        
+	        <TextView
+	            android:id="@+id/textView13"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#000000"
+	            android:layout_gravity="center_horizontal"				      
+	            android:text="0.85이상 복부비만" />	        
+	        
+	    </TableRow>	    
+
+	</TableLayout>
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_marginTop="20dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+    	android:background="@drawable/obesitybg3"
+	>
+	    <TextView
+	        android:text="허리·엉덩이 둘레비(WHR) \n = 허리둘레 / 엉덩이둘레"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal|center_vertical"
+	    />
+	    
+	</LinearLayout>    
+
+</LinearLayout>
+
+

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout11111_5"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout1_layer5" >
+
+        <!--
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="5dp"						
+			android:background="@drawable/outborder"
+			android:id="@+id/relativeLayout2_1_1"> 
+
+			<RelativeLayout
+				android:background="@drawable/border"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent">
+        -->
+
+        <LinearLayout
+            android:id="@+id/relativeLayout11_layer5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear_layer5_1111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/button_layer5_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cal_prev"
+                    android:paddingLeft="15dip"
+                    android:text="" >
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/tv1_layer5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="22dip" />
+
+                <ImageButton
+                    android:id="@+id/button_layer5_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cal_next"
+                    android:text="" >
+                </ImageButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layer5_2222"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp" >
+            </LinearLayout>
+
+            <!--
+                         <Button android:text="혈당 측정" android:gravity="left|center_vertical" 
+						android:paddingLeft="10dip" android:id="@+id/button_layer1_1" 
+						android:layout_marginTop="18px" android:layout_marginLeft="16px" 
+						android:layout_marginRight="16px" android:layout_width="fill_parent" 
+						android:background="@drawable/subbar_selector" 
+						android:layout_height="wrap_content"></Button> 
+						<Button android:text="나의 혈당 보기" android:gravity="left|center_vertical" 
+						android:paddingLeft="10dip" android:layout_below="@+id/button_layer1_1" 
+						android:id="@+id/button_layer1_2" android:layout_marginTop="8px" 
+						android:layout_marginLeft="16px" android:layout_marginRight="16px" 
+						android:background="@drawable/subbar_selector" 
+						android:layout_width="fill_parent" android:layout_height="wrap_content"></Button> 
+						<Button android:text="약물 순응도" android:gravity="left|center_vertical" 
+						android:paddingLeft="10dip" android:id="@+id/button_layer1_3" 
+						android:layout_below="@+id/button_layer1_2" 
+						android:layout_marginTop="8px" android:layout_marginLeft="16px" 
+						android:layout_marginRight="16px" android:background="@drawable/subbar_selector" 
+						android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+            -->
+
+
+            <!-- <ListView -->
+            <!-- android:layout_height="100dp" -->
+            <!-- android:cacheColorHint="#00000000" -->
+            <!-- android:layout_marginLeft="5dp" -->
+            <!-- android:layout_marginRight="5dp" -->
+            <!-- android:background="@android:color/transparent" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:id="@+id/listview_layer5_1" /> -->
+
+            <TableLayout
+                android:id="@+id/tableLayout99911_ex"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:stretchColumns="*" >
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:id="@+id/relativeLayout99911_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <!--
+                     <TextView android:layout_weight="43" 
+					android:textColor="#000000" android:focusable="false" 
+					android:layout_width="0dip" android:textSize="15dip" 
+					android:textStyle="bold" android:layout_marginLeft="0dip" 
+					android:layout_height="wrap_content" android:layout_centerVertical="true" 
+					android:id="@+id/bloodsugar_date" android:text="1"> 
+					</TextView>
+                        -->
+
+                        <TextView
+                            android:id="@+id/ex_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ex_memo"
+                            android:focusable="false"
+                            android:text="일일 운동량"
+                            android:textColor="@color/orange"
+                            android:textSize="18dip"
+                            android:textStyle="bold" >
+                        </TextView>
+                        <!--
+				<TextView
+					android:layout_weight="20"
+					android:textSize="18dip"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:focusable="false"
+					android:layout_toRightOf="@+id/bloodsugar_memo"
+					android:layout_width="0dip"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:id="@+id/bloodsugar_hospital"
+					android:text="5">
+				</TextView>
+                        -->
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:id="@+id/relativeLayout99911_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <!--
+                     <TextView android:layout_weight="43" 
+					android:textColor="#000000" android:focusable="false" 
+					android:layout_width="0dip" android:textSize="15dip" 
+					android:textStyle="bold" android:layout_marginLeft="0dip" 
+					android:layout_height="wrap_content" android:layout_centerVertical="true" 
+					android:id="@+id/bloodsugar_date" android:text="1"> 
+					</TextView>
+                        -->
+
+                        <TextView
+                            android:id="@+id/excercise_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ex_calorielabel"
+                            android:focusable="false"
+                            android:text="소모/목표 칼로리 : "
+                            android:textSize="18dip"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/ex_calorie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/excercise_time"
+                            android:focusable="false"
+                            android:text="120 /"
+                            android:textSize="18dip"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/ex_standardcalorie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ex_calorie"
+                            android:focusable="false"
+                            android:text=" 100kcal"
+                            android:textSize="18dip"
+                            android:textStyle="bold" >
+                        </TextView>
+                        <!--
+				<TextView
+					android:layout_weight="20"
+					android:textSize="18dip"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:focusable="false"
+					android:layout_toRightOf="@+id/bloodsugar_memo"
+					android:layout_width="0dip"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:id="@+id/bloodsugar_hospital"
+					android:text="5">
+				</TextView>
+                        -->
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:id="@+id/relativeLayout99922_ex"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <TextView
+                            android:id="@+id/ex_memo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:text="실행/목표 시간     : "
+                            android:textSize="18dip"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/ex_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ex_memo"
+                            android:focusable="false"
+                            android:text="120 /"
+                            android:textSize="18dip"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/ex_satandardtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ex_time"
+                            android:focusable="false"
+                            android:text=" 30분"
+                            android:textSize="18dip"
+                            android:textStyle="bold" >
+                        </TextView>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layer1_11112222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layout_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/graph_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/graph_input"
+                        android:text="입력" >
+                    </ImageButton>
+
+                    <TextView
+                        android:id="@+id/input_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="입력" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/graph_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/graph_list"
+                        android:text="목록" >
+                    </ImageButton>
+
+                    <TextView
+                        android:id="@+id/list_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="목록" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+			</RelativeLayout>
+		</RelativeLayout>
+        -->
+    </RelativeLayout>
+    <!-- </LinearLayout> </ScrollView> -->
+
+</LinearLayout>

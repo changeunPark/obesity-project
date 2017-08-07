@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<!-- <RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/sub_title"
+		android:id="@+id/linearLayout_config_1_1">
+
+		<Button android:text=""
+			android:id="@+id/button_config_1_back"
+			android:background="@drawable/prev_selector"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="16px"
+			android:layout_marginTop="30px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+		<TextView android:textColor="#ffffff"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:gravity="center_horizontal"
+			android:textSize="18dip"
+			android:textStyle="bold"
+			android:text="사용자 정보" />
+
+		<Button android:text=""
+			android:id="@+id/button_config_1_hosp"
+			android:background="@drawable/hosp_selector"
+			android:layout_marginRight="16px"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+
+	</RelativeLayout> -->
+	
+		<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_below="@+id/relativeLayout_config_2"
+		android:layout_height="fill_parent"
+		android:background="#FFFFFF"
+		android:id="@+id/relativeLayout_config_3">
+
+	<ScrollView android:id="@+id/scrollview_config_1"
+		android:layout_height="fill_parent"	
+		android:background="#FFFFFF"
+		android:layout_below="@+id/linearLayout_config_1_1"
+		android:layout_width="fill_parent">
+		<LinearLayout
+			android:id="@+id/linearLayout_config_1_1_1_1"
+			android:layout_width="match_parent"
+			android:paddingBottom="60dp"
+			android:layout_height="match_parent">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_below="@+id/linearLayout_config_1_1"
+				android:layout_height="fill_parent"				
+				android:id="@+id/relativeLayoutconfig12">
+				<!-- <RelativeLayout android:layout_width="match_parent" 
+					android:layout_height="wrap_content" android:layout_margin="18px" 
+					android:background="@drawable/outborder" 
+					android:id="@+id/relativeLayoutconfig1"> 
+					<RelativeLayout android:background="@drawable/border" 
+					android:layout_width="wrap_content" android:layout_height="wrap_content"> -->
+
+				<LinearLayout
+		
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dip"
+					android:id="@+id/linearLayout_config_1_2">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dip"
+						android:textColor="#000000"
+						android:textSize="18dp"
+						android:id="@+id/textview_config_1_name"
+						android:text="이름" />
+					<EditText
+						android:id="@+id/edittext_config_1_name"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="18dp"
+						android:layout_toRightOf="@+id/textview_config_1_name"
+						android:layout_marginLeft="50dip"
+						android:layout_marginRight="10dip"
+						android:inputType="textPersonName">
+						<requestFocus></requestFocus>
+					</EditText>
+
+				</LinearLayout>
+				<!-- <RelativeLayout android:id="@+id/rlayout0000" 
+					android:layout_below="@+id/linearLayout_config_1_2" 
+					android:layout_width="fill_parent" android:background="#DDDDDD" 
+					android:layout_height="2dip"></RelativeLayout> -->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_below="@+id/linearLayout_config_1_2"
+					android:layout_height="wrap_content"
+					android:id="@+id/linearLayout_config_1_3">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dip"
+						android:textColor="#000000"
+						android:textSize="18dp"
+						android:id="@+id/textview_config_1_sex"
+						android:layout_gravity="center_vertical"
+						android:text="성별" />
+
+					<RadioGroup
+						android:id="@+id/radiogroup_config_1_1"
+						android:layout_width="wrap_content"
+						android:orientation="horizontal"
+						android:layout_marginLeft="50dip"
+						android:layout_marginRight="10dip"
+						android:layout_height="wrap_content">
+
+						<RadioButton
+							android:id="@+id/radio_male"
+							android:layout_width="wrap_content"
+							android:textColor="#000000"
+							android:textSize="18dp"
+							android:layout_height="wrap_content"
+							android:text="남자"></RadioButton>
+
+						<RadioButton
+							android:id="@+id/radio_female"
+							android:layout_marginLeft="20dip"
+							android:textColor="#000000"
+							android:textSize="18dp"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="여자"></RadioButton>
+					</RadioGroup>
+
+				</LinearLayout>
+				<!-- <RelativeLayout android:id="@+id/rlayout0001" 
+					android:layout_below="@+id/linearLayout_config_1_3" 
+					android:layout_width="fill_parent" android:background="#DDDDDD" 
+					android:layout_height="2dip"></RelativeLayout> -->
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dip"
+					android:layout_below="@+id/linearLayout_config_1_3"
+					android:id="@+id/linearLayout_config_1_4">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="#000000"
+						android:textSize="18dp"
+						android:layout_marginLeft="10dip"
+						android:id="@+id/textview_config_1_age"
+						android:text="나이" />
+					<EditText
+						android:id="@+id/edittext_config_1_age"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="18dp"
+						android:layout_toRightOf="@+id/textview_config_1_age"
+						android:layout_marginLeft="50dip"
+						android:layout_marginRight="10dip"
+						android:inputType="number">
+					</EditText>
+
+				</LinearLayout>
+				<!-- <RelativeLayout android:id="@+id/rlayout0003" 
+					android:layout_below="@+id/linearLayout_config_1_4" 
+					android:layout_width="fill_parent" android:background="#DDDDDD" 
+					android:layout_height="2dip"></RelativeLayout> -->
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/linearLayout_config_1_4"
+					android:id="@+id/linearLayout_config_1_5">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dip"
+						android:textColor="#000000"
+						android:textSize="18dp"
+						android:id="@+id/textview_config_1_smoke"
+						android:layout_gravity="center_vertical"
+						android:text="흡연여부" />
+
+					<RadioGroup
+						android:id="@+id/radiogroup_config_1_2"
+						android:layout_width="wrap_content"
+						android:orientation="horizontal"
+						android:layout_marginLeft="20dip"
+						android:layout_marginRight="10dip"
+						android:layout_height="wrap_content">
+
+						<RadioButton
+							android:id="@+id/radio_smoke_y"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="#000000"
+							android:textSize="18dp"
+							android:text="예"></RadioButton>
+
+						<RadioButton
+							android:id="@+id/radio_smoke_n"
+							android:layout_marginLeft="40dip"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="#000000"
+							android:textSize="18dp"
+							android:text="아니오"></RadioButton>
+					</RadioGroup>
+
+				</LinearLayout>
+				<!-- <RelativeLayout android:id="@+id/rlayout0004" 
+					android:layout_below="@+id/linearLayout_config_1_5" 
+					android:layout_width="fill_parent" android:background="#DDDDDD" 
+					android:layout_height="2dip"></RelativeLayout> -->
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/linearLayout_config_1_5"
+					android:id="@+id/linearLayout_config_1_6">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dip"
+						android:id="@+id/textview_config_1_diabetes"
+						android:textColor="#D2691E"
+						android:textSize="18dp"
+						android:layout_gravity="center_vertical"
+						android:text="당뇨여부" />
+
+					<RadioGroup
+						android:id="@+id/radiogroup_config_1_3"
+						android:layout_width="wrap_content"
+						android:orientation="horizontal"
+						android:layout_marginLeft="20dip"
+						android:layout_marginRight="10dip"
+						android:layout_height="wrap_content">
+
+						<RadioButton
+							android:id="@+id/radio_diabetes_y"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="#000000"
+							android:textSize="18dp"
+							android:text="예"></RadioButton>
+
+						<RadioButton
+							android:id="@+id/radio_diabetes_n"
+							android:layout_marginLeft="40dip"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="#000000"
+							android:textSize="18dp"
+							android:text="아니오"></RadioButton>
+					</RadioGroup>
+
+				</LinearLayout>
+				<!-- </RelativeLayout> </RelativeLayout> -->
+
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		style="@android:style/ButtonBar"
+		android:gravity="center_horizontal|center_vertical"
+		android:id="@+id/linearLayout_config_1_7">
+
+		<Button android:text=""
+			android:id="@+id/button_config_1_save"
+			android:background="@drawable/save_selector"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text=""
+			android:id="@+id/button_config_1_delete"
+			android:layout_marginLeft="10px"
+			android:layout_toRightOf="@+id/button_config_1_save"
+			android:background="@drawable/delete_selector"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+
+	</LinearLayout>
+	
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:id="@+id/linearLayout3_1_1_1_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <RelativeLayout
+            android:id="@+id/relativeLayout31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--
+                     <RelativeLayout android:layout_width="match_parent" 
+					android:layout_height="wrap_content" android:layout_margin="18px" 
+					android:background="@drawable/outborder" 
+					android:id="@+id/relativeLayout3_1_1"> <RelativeLayout 
+					android:background="@drawable/border" android:layout_width="wrap_content" 
+					android:layout_height="wrap_content">
+            -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_3_1_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textrgchoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="가족 중에 비만이 있다."
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_3_1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/ryes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O"
+                        android:textColor="#000000"
+                        android:textSize="18dp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="X"
+                        android:textColor="#000000"
+                        android:textSize="18dp" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_3_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_3_1_6" >
+
+                <TextView
+                    android:id="@+id/textview_3_1_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="성별"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_3_1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="남자"
+                        android:textColor="#000000"
+                        android:textSize="18dp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여자"
+                        android:textColor="#000000"
+                        android:textSize="18dp" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--
+                     <RelativeLayout android:id="@+id/rlayout0000_3_5" 
+					android:layout_below="@+id/linearLayout_3_1_5" 
+					android:layout_width="fill_parent" android:background="#DDDDDD" 
+					android:layout_height="2dip"></RelativeLayout>
+            -->
+
+
+            <!--
+                     <RelativeLayout android:id="@+id/rlayout0000_3_1" 
+					android:layout_below="@+id/linearLayout_3_1_1" 
+					android:layout_width="fill_parent" android:background="#DDDDDD" 
+					android:layout_height="2dip"></RelativeLayout>
+            -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_3_1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_3_1_1" >
+
+                <TextView
+                    android:id="@+id/textinsert_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="키"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/insert_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textinsert_height"
+                    android:inputType="numberDecimal"
+                    android:textSize="18dp" >
+                </EditText>
+            </LinearLayout>
+
+            <!--
+                     <RelativeLayout android:id="@+id/rlayout0000_3_2" 
+					android:layout_below="@+id/linearLayout_3_1_2" 
+					android:layout_width="fill_parent" android:background="#DDDDDD" 
+					android:layout_height="2dip"></RelativeLayout>
+            -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_3_1_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_3_1_2" >
+
+                <TextView
+                    android:id="@+id/textinsert_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="몸무게"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/insert_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textinsert_weight"
+                    android:inputType="numberDecimal"
+                    android:textSize="18dp" >
+                </EditText>
+            </LinearLayout>
+
+            <!--
+                     <RelativeLayout android:id="@+id/rlayout0000_3_3" 
+					android:layout_below="@+id/linearLayout_3_1_3" 
+					android:layout_width="fill_parent" android:background="#DDDDDD" 
+					android:layout_height="2dip"></RelativeLayout>
+            -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_3_1_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_3_1_3" >
+
+                <TextView
+                    android:id="@+id/textinsert_waist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="허리둘레"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/insert_waist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textinsert_waist"
+                    android:inputType="numberDecimal"
+                    android:textSize="18dp" >
+                </EditText>
+            </LinearLayout>
+            <!--
+                     <RelativeLayout android:id="@+id/rlayout0000_3_4" 
+					android:layout_below="@+id/linearLayout_3_1_4" 
+					android:layout_width="fill_parent" android:background="#DDDDDD" 
+					android:layout_height="2dip"></RelativeLayout>
+            -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_3_1_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_3_1_4" >
+
+                <TextView
+                    android:id="@+id/textinsert_ass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="엉덩이 둘레"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/insert_ass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textinsert_ass"
+                    android:inputType="numberDecimal"
+                    android:textSize="18dp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_3_1_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_3_1_5"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/button_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="확인" >
+                </Button>
+
+                <Button
+                    android:id="@+id/button_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="수정" >
+                </Button>
+
+                <Button
+                    android:id="@+id/button_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="취소" >
+                </Button>
+                
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

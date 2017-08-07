@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+    <RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/sub_title"
+		android:id="@+id/relativeLayout6_6">
+
+		<Button android:text=""
+			android:id="@+id/button_layer6_6_back"
+			android:background="@drawable/prev_selector"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="16px"
+			android:layout_marginTop="30px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:gravity="center_horizontal"
+		    android:text="염분섭취 요령"
+		    android:textColor="@color/white"
+		    android:textSize="18dip"
+		    android:textStyle="bold" />
+
+	</RelativeLayout>
+	
+    <WebView 
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+    
+
+</LinearLayout>

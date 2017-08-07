@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settime">
+	    <item>없음</item>
+        <item>5분 전</item>
+        <item>15분 전</item>
+        <item>1시간 전</item>
+        <item>1일전</item>        
+	</string-array>
+</resources>
+<!-- <item>정각</item>  <item>설정</item> 
+	<item>2일전</item>	<item>1주일전</item>-->

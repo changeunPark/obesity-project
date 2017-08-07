@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/mblue"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="혈당 그래프"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:id="@+id/target"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="혈당 목표치 : "
+            android:textSize="15dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/bloodvaluetarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최대"
+            android:textSize="15dp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_graph_2_1_result_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/target"
+            android:layout_marginBottom="10dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="검색" />
+        </LinearLayout>
+
+        <!-- y축 그래프 -->
+
+        <LinearLayout
+            android:id="@+id/linear_line"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_graph_2_1_result_1"
+            android:layout_weight="3"
+            android:background="#ffffff" >
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1_graph"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_graph_2_1_result_1"
+            android:layout_marginLeft="-65dp"
+            android:layout_toRightOf="@+id/linear_line"
+            android:layout_weight="3" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1_graph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/linear_graphdialog_2222"
+                    android:layout_width="4550dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" >
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_3_2_2_graphdialog_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/textStandard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="*목표 혈당범위 : 80~150"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/linearLayout_3_2_2_graphdialog_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_3_2_2_graphdialog_1"
+        android:layout_weight="1"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/button_3_2_graphdialog_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인" >
+        </Button>
+    </LinearLayout>
+    -->
+
+</LinearLayout>

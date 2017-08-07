@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="kr.co.imcc.app.uDiabetesNote"
+      android:versionCode="5"
+      android:installLocation="internalOnly"
+      android:versionName="1.0.4"
+      >
+    <uses-sdk android:minSdkVersion="8"/>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
+  	<uses-permission android:name="android.permission.WAKE_LOCK" /> 
+  	<uses-permission android:name="android.permission.VIBRATE" /> 
+  	<uses-permission android:name="android.permission.WRITE_SETTINGS" /> 
+  	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" /> 
+  	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission> 
+  	
+  	
+    <application android:icon="@drawable/icon" android:label="대한민국 청소년 비만관리"
+         android:theme="@style/FindMyTrain">
+
+        <activity android:name=".tMainActivity" android:label="대한민국 청소년 비만관리"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>        
+        
+        <activity android:label="@string/app_name" android:name=".Activity1_menu" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:launchMode="singleTask"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity3_3" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity3_3_input" android:screenOrientation="portrait" android:launchMode="singleTask" android:excludeFromRecents="true"   
+        android:theme="@android:style/Theme.Dialog" ></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity3_3_item" android:screenOrientation="portrait" android:launchMode="singleTask" android:excludeFromRecents="true"   
+        android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustPan"></activity>
+        
+        <activity android:label="@string/app_name" android:name=".Activity1_hb" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".Activity1_1_hb" android:screenOrientation="portrait" android:launchMode="singleTask" android:excludeFromRecents="true"   
+        android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustPan"></activity>
+		<activity android:label="@string/app_name" android:name=".Activity1_2_hb" android:screenOrientation="portrait" android:launchMode="singleTask" android:excludeFromRecents="true"   
+        android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustPan"></activity>
+        
+		
+		<activity android:label="@string/app_name" android:name=".ActivityBloodPressure_change" android:screenOrientation="portrait" android:launchMode="singleTask" android:excludeFromRecents="true"   
+        android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustPan"></activity>
+		
+		<activity android:label="@string/app_name" android:name=".ActivityBloodPressure_input" android:screenOrientation="portrait" android:launchMode="singleTask" android:excludeFromRecents="true"   
+        android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustPan"></activity>
+		
+		<activity android:label="@string/app_name" android:name=".ActivityBloodPressure" android:screenOrientation="portrait"></activity>
+     
+        
+		<activity android:label="@string/app_name" android:name=".ActivityInfo" android:screenOrientation="portrait"></activity>
+		
+		<activity android:label="@string/app_name" android:name=".Activity2" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity1_1" android:screenOrientation="portrait" ></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity1_1_1" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity1_2" android:screenOrientation="portrait" ></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity1_3_1" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity1_3" android:screenOrientation="portrait"></activity>
+		
+		<activity android:label="@string/app_name" android:name=".Activity3" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity1_4" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".Activity3_2" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".Activity3_CVD" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".Activity3_CVD_Result" android:screenOrientation="portrait"></activity>
+		
+		<activity android:label="@string/app_name" android:name=".Activity4_menu" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:launchMode="singleTask"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity4_3" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:launchMode="singleTask"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity4_3_1" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:launchMode="singleTask"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity4_2" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:launchMode="singleTask"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity4_2_1" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:launchMode="singleTask"></activity>
+		
+		<!--<activity android:label="@string/app_name" android:name=".Activity5_temp" android:screenOrientation="portrait" android:theme="@android:style/Theme.Panel" android:windowSoftInputMode="adjustPan"></activity>
+		<activity android:label="@string/app_name" android:name=".Activity5_1_temp" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".Activity5_2_temp" android:screenOrientation="portrait"></activity>
+		-->
+		
+		<activity android:label="@string/app_name" android:name=".tActivity3_1" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity3_1_input" android:screenOrientation="portrait" android:launchMode="singleTask" android:excludeFromRecents="true"   
+        android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustPan"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity3_1_item" android:screenOrientation="portrait" android:launchMode="singleTask" android:excludeFromRecents="true"   
+        android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustPan"></activity>	
+		<activity android:label="@string/app_name" android:name=".tActivity2_4" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".Activity6_menu" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity2_3_1" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity2_3_2" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity2_3_3" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity2_3_4" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity2_3_5" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity2_3_6" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity2_3" android:screenOrientation="portrait"></activity>	
+		<activity android:label="@string/app_name" android:name=".tActivity2_4_1" android:screenOrientation="portrait"></activity>	
+		<activity android:label="@string/app_name" android:name=".tActivity2_2" android:screenOrientation="portrait"></activity>	
+		<activity android:name="Activity6_6" android:screenOrientation="portrait"></activity>  
+		<activity android:label="@string/app_name" android:name=".tActivityInfo" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".ActivityConfig_1" android:screenOrientation="portrait" ></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity3_4" android:screenOrientation="portrait" ></activity>
+		<activity android:label="@string/app_name" android:name=".ActivityConfig_3" android:screenOrientation="portrait" ></activity>
+		<activity android:label="@string/app_name" android:name=".ActivityConfig_4" android:screenOrientation="portrait"></activity>
+		<activity android:label="@string/app_name" android:name=".ActivityConfig_5" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:launchMode="singleTask"></activity>
+		<activity android:label="@string/app_name" android:name=".tActivity3_2" android:screenOrientation="portrait" ></activity>
+		
+		<!-- 새로운 엑티비티 추가  -->
+	 <activity android:label="@string/app_name" android:name=".Activity_child" android:screenOrientation="portrait"></activity>
+		 <activity android:label="@string/app_name" android:name=".Activity_add1" android:screenOrientation="portrait"></activity>
+	 	 <activity android:label="@string/app_name" android:name=".Activity_add2" android:screenOrientation="portrait"></activity>
+	 	 <activity android:label="@string/app_name" android:name=".Activity5_edit_menu" android:screenOrientation="portrait"></activity>
+		 <activity android:label="@string/app_name" android:name=".tActivity4_1" android:screenOrientation="portrait"></activity>
+		 <activity android:label="@string/app_name" android:name=".tActivity4_1_1" android:screenOrientation="portrait"></activity>
+		 <activity android:label="@string/app_name" android:name=".tIntro" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+		 <activity android:label="@string/app_name" android:name=".tActivity2_1_desert" android:screenOrientation="portrait"></activity>
+		 <activity android:label="@string/app_name" android:name=".tActivity2_3_set" android:screenOrientation="portrait"></activity>
+		 <activity android:label="@string/app_name" android:name=".tActivity2_1" android:screenOrientation="portrait"></activity>
+		  <activity android:label="@string/app_name" android:name=".tActivityInfo_result" android:screenOrientation="portrait"></activity>
+ 		  <activity android:label="@string/app_name" android:name=".tActivityexplain" android:screenOrientation="portrait"></activity>
+   		  <activity android:label="@string/app_name" android:name=".tActivity3_5" android:screenOrientation="portrait"></activity>
+   		  <activity android:label="@string/app_name" android:name=".tActivity3_5_input" android:screenOrientation="portrait"></activity>
+   		  <activity android:label="@string/app_name" android:name=".tActivity3_5_item" android:screenOrientation="portrait"></activity>
+		  <activity android:label="@string/app_name" android:name=".cal_CalView_3_5" android:screenOrientation="portrait"></activity>
+  		  <activity android:label="@string/app_name" android:name=".tActivity1_4_1" android:screenOrientation="portrait"></activity>
+   		  <activity android:label="@string/app_name" android:name=".tActivity1_5" android:screenOrientation="portrait"></activity>
+   		  <activity android:label="@string/app_name" android:name=".tActivity1_5_1" android:screenOrientation="portrait"></activity>
+   		    <activity android:label="@string/app_name" android:name=".tActivity1_8" android:screenOrientation="portrait"></activity>
+   		    <activity android:label="@string/app_name" android:name=".tActivity1_8_1" android:screenOrientation="portrait"></activity>
+   		    <activity android:label="@string/app_name" android:name=".tActivity1_6" android:screenOrientation="portrait"></activity>
+   		    <activity android:label="@string/app_name" android:name=".tActivity1_6_1" android:screenOrientation="portrait"></activity>
+   		    <activity android:label="@string/app_name" android:name=".tActivity1_6_2" android:screenOrientation="portrait"></activity>
+   		    <activity android:label="@string/app_name" android:name=".tActivity1_6_3" android:screenOrientation="portrait"></activity>
+   		     <activity android:label="@string/app_name" android:name=".tActivity4_1_2" android:screenOrientation="portrait"></activity>
+   		     <activity android:label="@string/app_name" android:name=".tActivity4_2_2" android:screenOrientation="portrait"></activity>
+   		     <activity android:label="@string/app_name" android:name=".tActivity4_3_2" android:screenOrientation="portrait"></activity>
+   		    <activity android:label="@string/app_name" android:name=".tActivity2_4_2" android:screenOrientation="portrait"></activity>
+   		    <activity android:label="@string/app_name" android:name=".tActivity2_4_3" android:screenOrientation="portrait"></activity>
+   		    <activity android:label="@string/app_name" android:name=".tActivity2_4_4" android:screenOrientation="portrait"></activity>
+   		     <activity android:label="@string/app_name" android:name=".tActivity1_7" android:screenOrientation="portrait"></activity>
+   		    <activity android:label="@string/app_name" android:name=".tActivity4_4" android:screenOrientation="portrait"></activity>
+   		    
+  		  
+  		  
+  		  
+  		  
+  		  
+  		  
+		<activity android:label="@string/app_name" android:name=".ActivityLogin" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"></activity>
+		
+		<provider android:name="AlarmProvider" android:authorities="kr.co.imcc.app.uDiabetesNote" /> 
+		<activity android:name="SetAlarm" android:label="@string/set_alarm" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+		
+		<activity android:name="SettingsActivity" android:label="@string/settings" android:screenOrientation="portrait">
+		 <intent-filter>
+		  <action android:name="android.intent.action.MAIN" />
+		  
+		  </intent-filter>
+		  </activity>
+		   
+		  <activity android:name="AlarmAlert" android:excludeFromRecents="true" android:screenOrientation="portrait" android:theme="@style/alarm_alert" android:launchMode="singleInstance" android:taskAffinity="" android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+		 <!-- 
+		 This activity is basically the same as AlarmAlert but with a more
+		             generic theme. It also shows as full screen (with status bar) but
+		             with the wallpaper background. 
+		
+		  --> 
+		  <activity android:name="AlarmAlertFullScreen" android:excludeFromRecents="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar" android:launchMode="singleInstance" android:taskAffinity="" android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+		  <activity android:name="ClockPicker" android:screenOrientation="portrait" /> 
+		 <receiver android:name="AlarmReceiver">
+		     
+		 <intent-filter>
+		  <action android:name="kr.co.imcc.app.uDiabetesNote.ALARM_ALERT" /> 
+		  <action android:name="alarm_killed" /> 
+		  <action android:name="cancel_snooze" /> 
+		  </intent-filter>
+		  </receiver>
+		  
+		  <receiver android:name=".AlarmService1" android:enabled="true">
+		  <intent-filter>
+		  <action android:name="android.intent.action.BOOT_COMPLETED" /> 
+		  <action android:name="kr.co.imcc.app.uDiabetesNote.AlarmService1" /> 
+		  </intent-filter>
+		  </receiver>
+		  
+		  <receiver android:name=".AlarmService2"  android:enabled="true">
+		  <intent-filter>
+		  <action android:name="android.intent.action.BOOT_COMPLETED" /> 
+		  <action android:name="kr.co.imcc.app.uDiabetesNote.AlarmService2" /> 
+		  </intent-filter>
+		  </receiver>
+		  
+		  <receiver android:name=".AlarmService3"  android:enabled="true">
+		  <intent-filter>
+		  <action android:name="android.intent.action.BOOT_COMPLETED" /> 
+		  <action android:name="kr.co.imcc.app.uDiabetesNote.AlarmService3" /> 
+		  </intent-filter>
+		  </receiver>
+		  
+		  <receiver android:name=".AlarmService4"  android:enabled="true">
+		  <intent-filter>
+		  <action android:name="android.intent.action.BOOT_COMPLETED" /> 
+		  <action android:name="kr.co.imcc.app.uDiabetesNote.AlarmService4" /> 
+		  </intent-filter>
+		  </receiver>
+		  
+		  <receiver android:name=".AlarmService5"  android:enabled="true">
+		  <intent-filter>
+		  <action android:name="android.intent.action.BOOT_COMPLETED" /> 
+		  <action android:name="kr.co.imcc.app.uDiabetesNote.AlarmService5" /> 
+		  </intent-filter>
+		  </receiver>
+		 <!-- 
+		 This service receives the same intent as AlarmReceiver but it does
+		             not respond to the same broadcast. The AlarmReceiver will receive
+		             the alert broadcast and will start this service with the same
+		             intent. The service plays the alarm alert and vibrates the device.
+		             This allows the alert to continue playing even if another activity
+		             causes the AlarmAlert activity to pause. 
+		
+		  --> 
+		 <service android:name="AlarmKlaxon">
+		 <intent-filter>
+		  <action android:name="kr.co.imcc.app.uDiabetesNote.ALARM_ALERT" /> 
+		  </intent-filter>
+		  </service>
+		 <receiver android:name="AlarmInitReceiver">
+		 <intent-filter>
+		  <action android:name="android.intent.action.BOOT_COMPLETED" /> 
+		  <action android:name="android.intent.action.TIME_SET" /> 
+		  <action android:name="android.intent.action.TIMEZONE_CHANGED" /> 
+		  </intent-filter>
+		  </receiver>
+		 <receiver android:name="AnalogAppWidgetProvider" android:label="@string/analog_gadget" android:icon="@drawable/ic_widget_analog_clock">
+		 <intent-filter>
+		  <action android:name="android.appwidget.action.APPWIDGET_UPDATE" /> 
+		  </intent-filter>
+		  <meta-data android:name="android.appwidget.provider" android:resource="@xml/analog_appwidget" /> 
+		  </receiver>
+		<service android:name="kr.co.imcc.app.uDiabetesNote.NotificationService"/>
+		
+		<receiver android:name =".ULNetworkReceiver">  
+		    <intent-filter>  
+		        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />  
+		    </intent-filter>    
+		</receiver>
+		
+		
+    </application>
+</manifest>

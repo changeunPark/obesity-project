@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+
+	<TableLayout
+		android:layout_height="wrap_content"
+		android:id="@+id/total_tableLayout99911"
+		android:layout_width="fill_parent"
+		android:stretchColumns="*">
+		
+		
+		<TableRow>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/relativeLayout99911_ex_total"
+				android:layout_height="match_parent">
+				<!-- <TextView android:layout_weight="43" 
+					android:textColor="#000000" android:focusable="false" 
+					android:layout_width="0dip" android:textSize="15dip" 
+					android:textStyle="bold" android:layout_marginLeft="0dip" 
+					android:layout_height="wrap_content" android:layout_centerVertical="true" 
+					android:id="@+id/bloodsugar_date" android:text="1"> 
+					</TextView> -->
+
+				<TextView
+				    android:id="@+id/ex_time_total"
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_centerVertical="true"
+				    android:layout_marginLeft="0dip"
+				    android:layout_marginRight="0dip"
+				    android:layout_weight="24"
+				    android:focusable="false"
+				    android:text="08시 30분"
+				    android:textColor="#000000"
+				    android:textSize="18dip"
+				    android:textStyle="bold" >
+
+				</TextView>
+
+				<TextView
+				    android:id="@+id/ex_kind_total"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_toRightOf="@+id/ex_time_total"
+				    android:focusable="false"
+				    android:text="걷기"
+				    android:textColor="#000000"
+				    android:textSize="18dip"
+				    android:textStyle="bold" >
+
+				</TextView>
+				<!-- <TextView android:layout_weight="20" 
+					android:textSize="18dip" android:textStyle="bold" 
+					android:textColor="#000000" android:focusable="false" 
+					android:layout_toRightOf="@+id/bloodsugar_memo" 
+					android:layout_width="0dip" android:layout_height="wrap_content" 
+					android:layout_centerVertical="true" android:id="@+id/bloodsugar_hospital" 
+					android:text="5"> </TextView> -->
+
+			</LinearLayout>
+
+		</TableRow>
+
+		<TableRow>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/relativeLayout99911_ex_total"
+				android:layout_height="match_parent">
+				<!-- <TextView android:layout_weight="43" 
+					android:textColor="#000000" android:focusable="false" 
+					android:layout_width="0dip" android:textSize="15dip" 
+					android:textStyle="bold" android:layout_marginLeft="0dip" 
+					android:layout_height="wrap_content" android:layout_centerVertical="true" 
+					android:id="@+id/bloodsugar_date" android:text="1"> 
+					</TextView> -->
+
+				<TextView
+				    android:id="@+id/excercise_time_total"
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_centerVertical="true"
+				    android:layout_marginLeft="0dip"
+				    android:layout_marginRight="0dip"
+				    android:layout_weight="24"
+				    android:focusable="false"
+				    android:text="60분"
+				    android:textColor="#000000"
+				    android:textSize="18dip"
+				    android:textStyle="bold" >
+
+				</TextView>
+
+				<TextView
+				    android:id="@+id/ex_cal_total"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_toRightOf="@+id/excercise_time_total"
+				    android:focusable="false"
+				    android:text="120kcal"
+				    android:textColor="@color/orange"
+				    android:textSize="18dip"
+				    android:textStyle="bold" >
+
+				</TextView>
+				<!-- <TextView android:layout_weight="20" 
+					android:textSize="18dip" android:textStyle="bold" 
+					android:textColor="#000000" android:focusable="false" 
+					android:layout_toRightOf="@+id/bloodsugar_memo" 
+					android:layout_width="0dip" android:layout_height="wrap_content" 
+					android:layout_centerVertical="true" android:id="@+id/bloodsugar_hospital" 
+					android:text="5"> </TextView> -->
+
+
+			</LinearLayout>
+
+		</TableRow>
+
+		<TableRow>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:id="@+id/relativeLayout99922_ex_total"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_height="match_parent">
+
+				<TextView
+				    android:id="@+id/ex_memo_total"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_centerVertical="true"
+				    android:focusable="false"
+				    android:text="4"
+				    android:textColor="@color/orange"
+				    android:textSize="18dip" >
+
+				</TextView>
+
+
+
+			</LinearLayout>
+
+		</TableRow>
+
+	</TableLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<!-- <RelativeLayout android:layout_width="match_parent" 
+		android:layout_height="80px" android:background="@drawable/sub_title" 
+		android:id="@+id/relativeLayout2_1_result"> 
+		<TextView android:textColor="#000000" android:layout_width="match_parent" 
+		android:layout_height="wrap_content" android:layout_centerVertical="true" 
+		android:gravity="center_horizontal" android:textSize="18dip" 
+		android:textStyle="bold" android:text="비만도 
+		검사" /> </RelativeLayout> -->
+		
+		<!--
+	<ScrollView android:id="@+id/scrollview_exeref2_1"
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content">
+		<LinearLayout
+			android:id="@+id/linearLayout_exeref2_1_1_1_1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+-->
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_below="@+id/relativeLayout_5_ref2_1_result"
+				android:layout_height="wrap_content"
+				android:background="@drawable/sub_bg"
+				android:id="@+id/relativeLayout51_ref2">
+
+
+				<TableLayout android:id="@+id/tabla_cuerpo2"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dip"
+					android:layout_width="match_parent">
+					<TableRow android:id="@+id/tableRow_5_ref2_1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape_title"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="구분"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape_title"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="100kcal 소비시간"></TextView>
+					</TableRow>
+					<TableRow android:id="@+id/tableRow_5_ref2_2"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_4"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="미용체조"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_5"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="19분 30초"></TextView>
+					</TableRow>
+					<TableRow android:id="@+id/tableRow_5_ref2_3"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_7"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="탁구"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_8"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="21분 30초"></TextView>
+					</TableRow>
+
+					<TableRow android:id="@+id/tableRow_5_ref2_4"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_10"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="계단"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_11"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="18분"></TextView>
+					</TableRow>
+
+					<TableRow android:id="@+id/tableRow_5_ref2_5"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_13"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="테니스"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_14"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="13분 30초"></TextView>
+					</TableRow>
+
+					<TableRow android:id="@+id/tableRow_5_ref2_6"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_16"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="스키"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_17"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="15분"></TextView>
+					</TableRow>
+
+					<TableRow android:id="@+id/tableRow_5_ref2_7"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_19"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="줄넘기"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_20"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="10분"></TextView>
+					</TableRow>
+
+					<TableRow android:id="@+id/tableRow_5_ref2_7_1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_22_1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="체조"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_23_1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="30분"></TextView>
+					</TableRow>
+
+					<TableRow android:id="@+id/tableRow_5_ref2_8"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_22"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="자전거타기"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_23"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="23분"></TextView>
+					</TableRow>
+
+					<TableRow android:id="@+id/tableRow_5_ref2_9"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_25"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="수영"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_26"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="11분 30초"></TextView>
+					</TableRow>
+					
+					<TableRow android:id="@+id/tableRow_5_ref2_10"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_27"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="골프"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_28"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="17분"></TextView>
+					</TableRow>
+					
+					<TableRow android:id="@+id/tableRow_5_ref2_11"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_29"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="검도"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_30"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="7분 30초"></TextView>
+					</TableRow>
+					
+					<TableRow android:id="@+id/tableRow_5_ref2_12"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_weight="0.7"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_31"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="볼링"></TextView>
+						<TextView
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:textColor="#000000"
+							android:background="@drawable/cell_shape"
+							android:padding="1dp"
+							android:id="@+id/textView_5_ref2_1_32"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="15분"></TextView>
+					</TableRow>
+
+				</TableLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tabla_cuerpo2"
+					android:layout_marginTop="10dp"
+					android:gravity="center_horizontal"
+					android:id="@+id/linearLayout__5_ref2_1_1_result">
+
+
+					<Button android:text=""
+						android:id="@+id/button__5_ref2_1_result_result"
+						android:background="@drawable/button_confirm_rect_selector"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"></Button>
+
+				</LinearLayout>
+
+			</RelativeLayout>
+				<!--
+		</LinearLayout>
+	</ScrollView>
+-->
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+
+ <style name="CustomActionBarThemev14"
+           parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabs</item>
+    </style>
+
+    <style name="MyActionBarTabs"
+           parent="android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+    </style>
+</resources>
+<!-- 
+
+<style name="MyTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    <item name="android:actionBarTabStyle">@style/MyTheme.ActionBar.Tab</item>
+</style>
+
+<style name="MyTheme.ActionBar.Tab">
+    <item name="android:background">@drawable/tab_bar_background</item>
+</style> -->

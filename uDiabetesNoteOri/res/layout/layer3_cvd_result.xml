@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/sub_title"
+		android:id="@+id/relativeLayout3">
+
+		<Button android:text=""
+			android:id="@+id/button_layer3_back"
+			android:background="@drawable/prev_selector"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="16px"
+			android:layout_marginTop="30px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+		<TextView android:textColor="#ffffff"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:gravity="center_horizontal"
+			android:textSize="18dip"
+			android:textStyle="bold"
+			android:text="AI-Driven CVD Prediction" />
+
+	</RelativeLayout>
+	
+	<TextView
+	    android:id="@+id/dis"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="1dip"
+	    android:gravity="right"
+	    android:text="PHR 서비스 사용자 기준"
+	    android:textColor="@color/orange"
+	    android:textStyle="bold" >
+
+</TextView>
+			
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/cvdline"
+		    android:orientation="vertical" >
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="4dip"
+		    android:text="*30년 후, 심혈관 위험 확률 분포"
+		    android:textColor="@color/white"
+		    android:textSize="18sp"
+		    android:textStyle="bold" />
+		
+		<TextView
+		    android:id="@+id/result_total"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="4dip"
+		    android:layout_marginBottom="5dip"
+		    android:text="현재 PHR 서비스 이용자 중에서 000님의 30년 후 심혈관계 질환의 위험 확률 분포는 높음에 해당됩니다."
+		    android:textColor="@color/white"
+		    android:textSize="18sp" />
+		
+			</LinearLayout>
+			
+		<TextView
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="30dip"
+	       android:gravity="right"
+	       android:text="각각의 입력 항목에 따른 위험도 분포 수준"
+	       android:textColor="@color/orange"
+	       android:textStyle="bold" >
+		</TextView>
+
+<ScrollView android:id="@+id/scrollview_info_1"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/relativeLayout_info_111"
+			android:layout_width="fill_parent">
+
+    <LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    >			
+			
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="8dip"
+		    android:text="*SBP (수축기 혈압)"
+		    android:textColor="@color/white"
+		    android:textSize="18sp"
+		    android:textStyle="bold" />
+		
+		<TextView
+		    android:id="@+id/result_SBPl"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="8dip"
+		    android:text="SBP 수치의 정상 범위는 [120mmHg]이며, 000님은 수축기 혈압의 수치가 000mmHg 입니다. PHR 서비스 이용자 중에서 확률 분포가 높음에 해당 됩니다.(120이하 : 좋음, 120~140 : 보통, 140이상 : 나쁨)"
+		    android:textColor="@color/white"
+		    android:textSize="18sp" />
+		
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dip"
+		    android:gravity="right"
+		    android:text="-120이하 : 좋음,120~140 : 보통, 140이상 : 나쁨"
+		    android:textColor="@color/cal_hilite"
+		    android:textStyle="bold" >
+
+		</TextView>
+		
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="8dip"
+		    android:text="*Total Cholesterol (총 콜레스테롤)"
+		    android:textColor="@color/white"
+		    android:textSize="18sp"
+		    android:textStyle="bold" />
+		
+		<TextView
+		    android:id="@+id/result_col"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="8dip"
+		    android:text="SBP 수치의 정상 범위는 [120mmHg]이며, 000님은 수축기 혈압의 수치가 000mmHg 입니다. PHR 서비스 이용자 중에서 확률 분포가 높음에 해당 됩니다.(120이하 : 좋음, 120~140 : 보통, 140이상 : 나쁨)"
+		    android:textColor="@color/white"
+		    android:textSize="18sp" />
+		
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dip"
+		    android:gravity="right"
+		    android:text="-200이하 : 좋음,200~240 : 보통, 240이상 : 나쁨"
+		    android:textColor="@color/white"
+		    android:textStyle="bold" >
+
+		</TextView>
+		
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="8dip"
+		    android:text="*HDL-Cholestrol\n(고비중리 포단백 포함되는 콜레스테롤)"
+		    android:textColor="@color/white"
+		    android:textSize="18sp"
+		    android:textStyle="bold" />
+		
+		<TextView
+		    android:id="@+id/result_HDL"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="8dip"
+		    android:text="SBP 수치의 정상 범위는 [120mmHg]이며, 000님은 수축기 혈압의 수치가 000mmHg 입니다. PHR 서비스 이용자 중에서 확률 분포가 높음에 해당 됩니다.(120이하 : 좋음, 120~140 : 보통, 140이상 : 나쁨)"
+		    android:textColor="@color/white"
+		    android:textSize="18sp" />
+		
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dip"
+		    android:gravity="right"
+		    android:text="-40이하 : 나쁨, 40~50 : 보통, 240이상 : 나쁨"
+		    android:textColor="@color/white"
+		    android:textStyle="bold" >
+		    
+		  </TextView>
+		
+		</LinearLayout>
+			
+	</ScrollView>
+
+</LinearLayout>

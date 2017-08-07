@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<!-- <RelativeLayout android:layout_width="match_parent" 
+		android:layout_height="80px" android:background="@drawable/sub_title" 
+		android:id="@+id/relativeLayout3_1_result"> 
+		<TextView android:textColor="#000000" android:layout_width="match_parent" 
+		android:layout_height="wrap_content" android:layout_centerVertical="true" 
+		android:gravity="center_horizontal" android:textSize="18dip" 
+		android:textStyle="bold" android:text="비만도 
+		검사" /> </RelativeLayout> -->
+
+	<ListView
+		android:layout_height="325dp"
+		android:background="@android:color/transparent" 
+		android:layout_width="fill_parent"
+		android:id="@+id/listview_listdialog_1_hb" />
+	
+		<TableLayout
+		    android:layout_marginTop="5dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+
+		    <TableRow
+		        android:id="@+id/tableRow1"
+		        android:gravity="right"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" >
+
+		   <TextView
+		       android:id="@+id/textView1"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:text=" : 사용자입력 데이터" />
+
+		    </TableRow>
+
+		    <TableRow
+		        android:id="@+id/tableRow2"
+		        android:gravity="right"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" >
+
+			<TextView
+			    android:id="@+id/textView2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text=" : 병원연동 데이터" />
+		        
+		    </TableRow>
+		</TableLayout>	
+
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:layout_marginBottom="5dp"
+		android:gravity="center_horizontal"
+		android:id="@+id/linearLayout_3_2_2_listdialog_1_hb">
+
+		<Button android:text=""
+			android:background="@drawable/button_confirm_general_selector"
+			android:id="@+id/button_3_2_listdialog_result_1_hb"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+
+	</LinearLayout>
+
+
+</LinearLayout>

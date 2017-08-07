@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:background="@drawable/list_title"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:gravity="center_horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/total_relativeLayout99911_title_hb_total"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true">
+		<TextView android:textSize="18dip"
+			android:textStyle="bold"
+			android:id="@+id/total_bloodsugar_date_title_hb_total"
+			android:text=""
+			android:textColor="#FFFFFF"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"></TextView>
+	 	<TextView android:textSize="18dip"
+			android:textStyle="bold"
+			android:id="@+id/total_bloodsugar_mean_value_hb_total"
+			android:text="평균: 180"
+			android:layout_marginLeft="10dip"
+			android:textColor="#FFFFFF"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"></TextView> 
+	</LinearLayout>
+
+
+</RelativeLayout>

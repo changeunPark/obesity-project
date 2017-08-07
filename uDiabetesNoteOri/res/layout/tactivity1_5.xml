@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="20dp"
+    android:focusable="true"
+    android:background="@drawable/tab1_fb"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout3_1_1_1_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textrgchoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="가족 중에 비만이 있다."
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_3_1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/ryes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O"
+                        android:textColor="#000000"
+                        android:textSize="18dp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="X"
+                        android:textColor="#000000"
+                        android:textSize="18dp" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_3_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_3_1_6"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_3_1_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="성별"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_3_1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="남자"
+                        android:textColor="#000000"
+                        android:textSize="18dp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여자"
+                        android:textColor="#000000"
+                        android:textSize="18dp" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_3_1_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_3_1_1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="나이"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/textage"
+                android:text="17"
+                    android:layout_weight="3"
+                    android:inputType="numberDecimal"
+                    android:textSize="18dp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_3_1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_3_1_7"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textinsert_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="키"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/insert_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/textinsert_height"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="cm"
+                android:text="170"
+                    android:inputType="numberDecimal"
+                    android:textSize="18dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textinsert_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="몸무게"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/insert_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textinsert_weight"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="kg"
+                android:text="90"
+                    android:inputType="numberDecimal"
+                    android:textSize="18dp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_3_1_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_3_1_2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textinsert_waist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="허리둘레"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/insert_waist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/textinsert_waist"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="inch"
+                android:text="40"
+                    android:inputType="numberDecimal"
+                    android:textSize="18dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textinsert_ass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="엉덩이둘레"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/insert_ass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textinsert_ass"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                android:text="30"
+                    android:hint="inch"
+                    android:inputType="numberDecimal"
+                    android:textSize="18dp" >
+                </EditText>
+            </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_3_1_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_3_1_5"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/button_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비만위험도에 의한 식이추천" >
+        </Button>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_3_1_8" >
+
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:max="60"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/progresstext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProgressBar"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="식이추천을 위해 『지식베이스 기반의 협력적 필터링』으로 계산중입니다."
+            android:textSize="20dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/tab1_fb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_config_3"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout_config_2" >
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout_config_2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/textview_config_2_height_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="혈당 최대값"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edittext_config_2_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dip"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@+id/textview_config_2_height_1"
+                android:inputType="number"
+                android:textSize="18dp" >
+
+                <requestFocus>
+                </requestFocus>
+            </EditText>
+        </LinearLayout>
+
+        <!--
+		<RelativeLayout
+			android:id="@+id/rlayout0000_config_2_1"
+			android:layout_below="@+id/linearLayout_config_2_1"
+			android:layout_width="fill_parent"
+			android:background="#DDDDDD"
+			android:layout_height="2dip"></RelativeLayout>
+        -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout_config_2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_config_2_1"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/textview_config_2_weight_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="혈당 최소값"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edittext_config_2_min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dip"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@+id/textview_config_2_weight_1"
+                android:inputType="number"
+                android:textSize="18dp" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- </RelativeLayout> </RelativeLayout> -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout_2_1_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_config_2_2"
+            android:layout_marginTop="25px"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/button_config_2_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_mconfirm" >
+            </ImageButton>
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_2_1_10"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="혈당관리 목표치 설정을 위해 혈당 최대값과 최소값을 입력해주세요." />
+        </LinearLayout>
+        
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

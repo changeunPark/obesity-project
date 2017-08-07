@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/sub_title"
+		android:id="@+id/relativeLayout1_menu">
+
+		<Button android:text=""
+			android:id="@+id/button_layer1_menu_back"
+			android:background="@drawable/prev_selector"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="16px"
+			android:layout_marginTop="30px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:gravity="center_horizontal"
+		    android:text="당뇨병 관리"
+		    android:textColor="#ffffff"
+		    android:textSize="18dip"
+		    android:textStyle="bold" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/sub_bg"
+		android:id="@+id/relativeLayout1_menu_1">
+
+		<Button
+		    android:id="@+id/button_layer1_menu_1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="16px"
+		    android:layout_marginRight="16px"
+		    android:layout_marginTop="18px"
+		    android:background="@drawable/subbar_selector"
+		    android:gravity="left|center_vertical"
+		    android:paddingLeft="10dip"
+		    android:text="혈당 관리"
+		    android:textSize="18dp" >
+		    	    		    
+		</Button>
+		
+		<Button android:text="당화혈색소 관리"
+			android:gravity="left|center_vertical"
+			android:paddingLeft="10dip"
+			android:textSize="18dp"
+			android:id="@+id/button_layer1_menu_2"
+			android:layout_marginTop="8px"
+			android:layout_below="@+id/button_layer1_menu_1"
+			android:layout_marginLeft="16px"
+			android:layout_marginRight="16px"
+			android:background="@drawable/subbar_selector"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">	    
+		</Button>
+
+	</RelativeLayout>
+</LinearLayout>
+
+

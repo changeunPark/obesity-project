@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+<!-- activity1_hb와 연관 -->
+    <LinearLayout
+        android:id="@+id/linearLayout__5_input_1_1_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mblue"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView_5_title_1_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_exeinput_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout__5_input_1_1_title" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_exeinput_1_1_1_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout51_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView_5_input_1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:text="혈당수치"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/textView_5_input_1_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="18dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView_5_input_1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_2"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:text="메모"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/textView_5_input_1_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="18dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView_5_input_1_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_5"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:text="시간"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <TimePicker
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/timePicker_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_6"
+                    android:layout_marginLeft="10dp">
+                </TimePicker>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout__5_input_1_1_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/scrollview_exeinput_1"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/button_5_input_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:textSize="18dp" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_5_input_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/button_5_input_save"
+            android:text="취소"
+            android:textSize="18dp" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

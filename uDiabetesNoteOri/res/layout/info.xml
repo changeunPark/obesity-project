@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/sub_title"
+		android:id="@+id/relativeLayout1_3">
+
+		<Button android:text=""
+			android:id="@+id/button_layer1_3_back"
+			android:background="@drawable/prev_selector"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="16px"
+			android:layout_marginTop="30px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:gravity="center_horizontal"
+		    android:text="Application 정보"
+		    android:textColor="#ffffff"
+		    android:textSize="18dp"
+		    android:textStyle="bold" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/relativeLayout1_3"
+		android:background="@drawable/time_bg"
+		android:id="@+id/relativeLayout13">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="12dp"
+			android:background="@drawable/outborder"
+			android:id="@+id/relativeLayout_info_111">
+
+			<RelativeLayout
+				android:background="@drawable/border"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			<TextView
+				android:textColor="#000000"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:textSize="18dp"
+				android:textStyle="bold"
+				android:paddingBottom="5dp"
+				android:id="@+id/textview_info_0"
+				android:text="유케어노트 고혈압,당뇨관리는 고혈압,당뇨환자가 건강을 관리하는데 도움을 주는 앱으로서 특히 가천의대 길병원의 PHR서비스에 등록한 환자일 경우에는 병원정보를 연동하여 병원데이터를 가져와서 건강관리에 이용할 수 있습니다." />
+
+			</RelativeLayout>
+		</RelativeLayout>
+
+		<ScrollView android:id="@+id/scrollview_info_1"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/relativeLayout_info_111"
+			android:layout_width="fill_parent">
+			<LinearLayout
+				android:id="@+id/linearLayout_info_1_1_1_1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:id="@+id/relativeLayout13_1">
+
+					<ImageView android:src="@drawable/newdm_main"
+						android:id="@+id/imageView_info_1"
+						android:layout_height="300dp"
+						android:padding="5dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act1"
+						android:layout_below="@+id/imageView_info_1"
+						android:id="@+id/imageView_info_2"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView
+						android:src="@drawable/hospinterface"
+						android:layout_below="@+id/imageView_info_2"
+						android:id="@+id/imageView_info_3"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/graph"
+						android:layout_below="@+id/imageView_info_3"
+						android:id="@+id/imageView_info_4"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/list"
+						android:layout_below="@+id/imageView_info_4"
+						android:id="@+id/imageView_info_5"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act2"
+						android:layout_below="@+id/imageView_info_5"
+						android:id="@+id/imageView_info_6"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act2_1"
+						android:layout_below="@+id/imageView_info_6"
+						android:id="@+id/imageView_info_7"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act2_2"
+						android:layout_below="@+id/imageView_info_7"
+						android:id="@+id/imageView_info_8"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act2_3"
+						android:layout_below="@+id/imageView_info_8"
+						android:id="@+id/imageView_info_9"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act3"
+						android:layout_below="@+id/imageView_info_9"
+						android:id="@+id/imageView_info_10"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act3_1"
+						android:layout_below="@+id/imageView_info_10"
+						android:id="@+id/imageView_info_11"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act3_2"
+						android:layout_below="@+id/imageView_info_11"
+						android:id="@+id/imageView_info_12"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act4"
+						android:layout_below="@+id/imageView_info_12"
+						android:id="@+id/imageView_info_13"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act5"
+						android:layout_below="@+id/imageView_info_13"
+						android:id="@+id/imageView_info_14"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act6"
+						android:layout_below="@+id/imageView_info_14"
+						android:id="@+id/imageView_info_15"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+					
+					<ImageView android:src="@drawable/config"
+						android:layout_below="@+id/imageView_info_15"
+						android:id="@+id/imageView_info_16"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+												
+					<!-- 
+					<ImageView android:src="@drawable/act6_1"
+						android:layout_below="@+id/imageView_info_15"
+						android:id="@+id/imageView_info_16"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act6_2"
+						android:layout_below="@+id/imageView_info_16"
+						android:id="@+id/imageView_info_17"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act6_3"
+						android:layout_below="@+id/imageView_info_17"
+						android:id="@+id/imageView_info_18"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act6_4"
+						android:layout_below="@+id/imageView_info_18"
+						android:id="@+id/imageView_info_19"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/act6_5"
+						android:layout_below="@+id/imageView_info_19"
+						android:id="@+id/imageView_info_20"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+					 -->
+					 
+
+					<!-- 
+					<ImageView android:src="@drawable/config_1"
+						android:layout_below="@+id/imageView_info_21"
+						android:id="@+id/imageView_info_22"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/config_2"
+						android:layout_below="@+id/imageView_info_22"
+						android:id="@+id/imageView_info_23"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/config_3"
+						android:layout_below="@+id/imageView_info_23"
+						android:id="@+id/imageView_info_24"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+
+					<ImageView android:src="@drawable/config_4"
+						android:layout_below="@+id/imageView_info_24"
+						android:id="@+id/imageView_info_25"
+						android:padding="5dp"
+						android:layout_height="300dp"
+						android:layout_width="200dp"></ImageView>
+ 					-->
+ 					
+					<TextView android:id="@+id/textView_info_1"
+						android:text="유케어노트 당뇨혈압 App.의 메인화면이다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_alignParentTop="true"
+						android:layout_toRightOf="@+id/imageView_info_1"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_2"
+						android:text="메인화면에서 혈당,고혈압관리를 선택하면 다음과 같이 달력을 통해서 혈당을 입력하거나 수정할 수 있다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_1"
+						android:layout_toRightOf="@+id/imageView_info_2"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_3"
+						android:text="병원정보 연동을 선택하면 가천의대 길병원의 PHR 서비스에 가입된 환자의 경우 로그인을 통해 병원 정보를 가져올 수 있다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_2"
+						android:layout_toRightOf="@+id/imageView_info_3"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_4"
+						android:text="그래프 보기를 선택하면 혈당을 그래프로 표시해주며 가로로 스크롤 된다. 검색일을 변경할 수 있다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_3"
+						android:layout_toRightOf="@+id/imageView_info_4"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_5"
+						android:text="리스트보기를 선택하면 저장된 데이터를 리스트 형태로 표시해 준다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_4"
+						android:layout_toRightOf="@+id/imageView_info_5"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_6"
+						android:text="체중관리 메뉴는 그림과 같이 3가지 메뉴로 구성된다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_5"
+						android:layout_toRightOf="@+id/imageView_info_6"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_7"
+						android:text="체중관리의 비만도 검사 내용이다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_6"
+						android:layout_toRightOf="@+id/imageView_info_7"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_8"
+						android:text="체중관리의 BMI 검사 내용이다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_7"
+						android:layout_toRightOf="@+id/imageView_info_8"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_9"
+						android:text="체중관리의 복부 비만도 검사 내용이다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_8"
+						android:layout_toRightOf="@+id/imageView_info_9"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_10"
+						android:text="심뇌혈관 위험도 메뉴는 그림과 같이 3가지 메뉴로 구성된다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_9"
+						android:layout_toRightOf="@+id/imageView_info_10"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_11"
+						android:text="심뇌혈관 위험도의 심장혈관 질환 위험도 내용이다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_10"
+						android:layout_toRightOf="@+id/imageView_info_11"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_12"
+						android:text="심뇌혈관 위험도의 뇌졸중 위험도 내용이다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_11"
+						android:layout_toRightOf="@+id/imageView_info_12"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_13"
+						android:text="스트레스 메뉴를 선택하면 그림과 같이 우울증 설문을 통해 우울증 정도를 측정할 수 있다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_12"
+						android:layout_toRightOf="@+id/imageView_info_13"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_14"
+						android:text="운동요법 메뉴를 선택하면 운동시 운동량을 측정 및 기록 할 수 있다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_13"
+						android:layout_toRightOf="@+id/imageView_info_14"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_15"
+						android:text="영양관리 가이드 메뉴는 그림과 같이 3가지 메뉴로 구성된다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_14"
+						android:layout_toRightOf="@+id/imageView_info_15"
+						android:layout_marginTop="14dp"></TextView>
+								
+					<TextView android:id="@+id/textView_info_15"
+						android:text="설정메뉴는 그림과 같이 6가지 메뉴로 구성된다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_15"
+						android:layout_toRightOf="@+id/imageView_info_16"
+						android:layout_marginTop="14dp"></TextView>
+
+				<!--
+					<TextView android:id="@+id/textView_info_22"
+						android:text="설정의 사용자정보 관련 내용이다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_21"
+						android:layout_toRightOf="@+id/imageView_info_22"
+						android:layout_marginTop="14dp"></TextView>
+				
+					<TextView android:id="@+id/textView_info_23"
+						android:text="설정의 혈당조절 목표치 내용으로서 최대치와 최소치를 설정하면 혈당관리 메뉴의 그래프보기에 표시된다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_22"
+						android:layout_toRightOf="@+id/imageView_info_23"
+						android:layout_marginTop="14dp"></TextView>
+
+					<TextView android:id="@+id/textView_info_24"
+						android:text="설정의 초진결과 내용이다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_23"
+						android:layout_toRightOf="@+id/imageView_info_24"
+						android:layout_marginTop="14dp"></TextView>
+					 
+					<TextView android:id="@+id/textView_info_25"
+						android:text="설정의 복약시간 설정 관련 내용이다."
+						android:textColor="#FFFFFF"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_below="@+id/imageView_info_24"
+						android:layout_toRightOf="@+id/imageView_info_25"
+						android:layout_marginTop="14dp"></TextView>
+ 					-->
+
+				</RelativeLayout>
+			</LinearLayout>
+		</ScrollView>
+	</RelativeLayout>
+</LinearLayout>

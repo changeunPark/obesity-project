@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout__5_input_1_1_title_51"
+		android:background="@color/mblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/textView_5_title_1_4_51"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="혈당리스트"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_exeinput_1_51"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout__5_input_1_1_title_51" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_exeinput_1_1_1_1_51"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout51_input_51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView_5_input_1_1_51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:text="시간"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/textView_5_input_1_2_51"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView_5_input_1_1_51"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView_5_input_1_3_51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_1_51"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:text="운동의종류"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/textView_5_input_1_4_51"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_2_51"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/textView_5_input_1_3_51"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView_5_input_1_5_51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_3_51"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:text="운동시간(분)"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/textView_5_input_1_6_51"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_4_51"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/textView_5_input_1_5_51"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView_5_input_1_7_51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_5_51"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:text="몸무게(Kg)"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/textView_5_input_1_8_51"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_6_51"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/textView_5_input_1_5_51"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView_5_input_1_9_51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_7_51"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:text="메모"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/textView_5_input_1_10_51"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_5_input_1_8_51"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/textView_5_input_1_9_51"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18dp" >
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout__5_input_1_1_result_51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollview_exeinput_1_51"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <Button
+            android:id="@+id/button_5_input_save_51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_5_input_cancel_51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/button_5_input_save_51"
+            android:text="취소" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

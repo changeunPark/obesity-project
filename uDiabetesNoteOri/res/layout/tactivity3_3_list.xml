@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:background="@color/mblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="혈당 목록"
+            android:textColor="#ffffff"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_listdialog_1"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_width="fill_parent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_3_2_2_listdialog_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/button_3_2_listdialog_result_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

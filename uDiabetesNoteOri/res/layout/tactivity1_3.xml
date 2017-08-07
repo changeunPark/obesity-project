@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/tab1_fb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout23"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout2_3" >
+
+        <!--
+             <RelativeLayout android:layout_width="match_parent" 
+			android:layout_height="wrap_content" android:layout_margin="18px" 
+			android:background="@drawable/outborder" 
+			android:id="@+id/relativeLayout2_3_1"> <RelativeLayout 
+			android:background="@drawable/border" android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+        -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout_2_3_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/textview_2_3_waist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="허리둘레"
+                android:textColor="#000000"
+                android:textSize="18dip" />
+
+            <EditText
+                android:id="@+id/edittext_2_3_waist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dip"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@+id/textview_2_3_waist"
+                android:gravity="right"
+                android:text="40"
+                android:hint="inch"
+                android:inputType="numberDecimal" >
+
+                <requestFocus>
+                </requestFocus>
+            </EditText>
+        </LinearLayout>
+
+        <!--
+		<RelativeLayout
+			android:id="@+id/rlayout0000_2_3"
+			android:layout_below="@+id/linearLayout_2_3_1"
+			android:layout_width="fill_parent"
+			android:background="#DDDDDD"
+			android:layout_height="2dip"></RelativeLayout>
+        -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout_2_3_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_2_3_1"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/textview_2_3_hip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="엉덩이둘레"
+                android:textColor="#000000"
+                android:textSize="18dip" />
+
+            <EditText
+                android:id="@+id/edittext_2_3_hip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                 android:gravity="right"
+                android:hint="inch"
+                android:text="30"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@+id/textview_2_3_hip"
+                android:inputType="numberDecimal" >
+            </EditText>
+        </LinearLayout>
+        <!--
+		<RelativeLayout
+			android:id="@+id/rlayout0000_2_3_1"
+			android:layout_below="@+id/linearLayout_2_3_2"
+			android:layout_width="fill_parent"
+			android:background="#DDDDDD"
+			android:layout_height="2dip"></RelativeLayout>
+        -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout_2_3_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_2_3_2" >
+
+            <TextView
+                android:id="@+id/textview_2_3_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="성별"
+                android:textColor="#000000"
+                android:textSize="18dip" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_2_3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dip"
+                android:layout_marginRight="10dip"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_male_2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="남자"
+                    android:textColor="#000000"
+                    android:textSize="18dip" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_female_2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="여자"
+                    android:textColor="#000000"
+                    android:textSize="18dip" >
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- </RelativeLayout> </RelativeLayout> -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout_2_3_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_2_3_3"
+            android:layout_marginTop="25px"
+            android:gravity="center_horizontal" >
+
+            <!--
+                 <Button android:text=""
+				android:background="@drawable/button_result_general_selector"
+				android:id="@+id/button_2_3_result"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></Button>
+            -->
+
+            <ImageButton
+                android:id="@+id/button_2_3_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_mconfirm" >
+            </ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_2_3_4"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="복부 비만도 측정을 위해 허리둘레, 엉덩이둘레 그리고 성별을 입력해주세요." />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

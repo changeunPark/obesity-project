@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:background="@drawable/sub_bg"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/sub_title"
+		android:id="@+id/relativeLayout3">
+
+		<Button android:text=""
+			android:id="@+id/button_layer3_back"
+			android:background="@drawable/prev_selector"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="16dp"
+			android:layout_marginTop="30dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:gravity="center_horizontal"
+		    android:text="심장·뇌혈관 위험도"
+		    android:textColor="#ffffff"
+		    android:textSize="18dip"
+		    android:textStyle="bold" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout31">
+
+		<Button
+		    android:id="@+id/button_layer3_1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="16px"
+		    android:layout_marginRight="16px"
+		    android:layout_marginTop="18px"
+		    android:background="@drawable/subbar_selector"
+		    android:gravity="left|center_vertical"
+		    android:paddingLeft="10dip"
+		    android:text="심장혈관질환 위험도"
+		    android:textSize="18dp" >
+		</Button>
+		<Button android:text="AI-Driven CVD Prediction"
+			android:gravity="left|center_vertical"
+			android:paddingLeft="10dip"
+			android:textSize="18dp"
+			android:id="@+id/button_layer3_2"
+			android:layout_marginTop="8px"
+			android:layout_below="@+id/button_layer3_1"
+			android:layout_marginLeft="16px"
+			android:layout_marginRight="16px"
+			android:background="@drawable/subbar_selector"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">	    
+		</Button>
+		<Button android:text="뇌졸중 위험도"
+			android:gravity="left|center_vertical"
+			android:paddingLeft="10dip"
+			android:textSize="18dp"
+			android:id="@+id/button_layer3_3"
+			android:layout_marginTop="8px"
+			android:layout_below="@+id/button_layer3_2"
+			android:layout_marginLeft="16px"
+			android:layout_marginRight="16px"
+			android:background="@drawable/subbar_selector"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">		    
+		</Button>
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:layout_marginTop="5dp"
+	    android:layout_marginLeft="16px"
+		android:layout_marginRight="16px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout31">
+<!--  
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:background="@color/white"
+		    android:text=""
+		    android:textColor="@color/cal_foreground" />
+		   -->		   
+	<WebView 
+	    android:id="@+id/webview"    
+	    android:layout_width="fill_parent"        
+	    android:layout_height="wrap_content" /> 		     
+		   
+	</RelativeLayout>
+
+</LinearLayout>
+
+

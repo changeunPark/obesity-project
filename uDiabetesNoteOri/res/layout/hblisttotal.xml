@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+
+	<TableLayout
+		android:layout_height="wrap_content"
+		android:id="@+id/total_tableLayout99911_hb_total"
+		android:layout_width="fill_parent"
+		android:stretchColumns="*">
+<!-- 
+		<TableRow>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/total_relativeLayout99911"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:layout_weight="6"
+					android:textColor="#000000"
+					android:focusable="false"
+					android:layout_width="0dip"
+					android:textSize="18dip"
+					android:textStyle="bold"
+					android:layout_marginLeft="0dip"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:id="@+id/total_bloodsugar_date"
+					android:text="1">
+				</TextView>
+
+				<TextView
+					android:layout_weight="4"
+					android:textSize="18dip"
+					android:textColor="#000000"
+					android:textStyle="bold"
+					android:focusable="false"
+					android:layout_toRightOf="@+id/total_bloodsugar_date"
+					android:layout_width="0dip"
+					android:layout_marginLeft="0dip"
+					android:layout_marginRight="0dip"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:id="@+id/total_bloodsugar_time"
+					android:text="2">
+				</TextView>
+			</LinearLayout>
+
+		</TableRow> -->
+		<TableRow>
+
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/total_relativeLayout99911_1_hb_total"
+				android:layout_height="wrap_content">
+				
+				<TextView
+				    android:id="@+id/total_bloodsugar_time_hb_total"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_centerVertical="true"
+				    android:layout_marginLeft="0dip"
+				    android:layout_marginRight="0dip"
+				    android:layout_toRightOf="@+id/total_bloodsugar_date_hb_total"
+				    android:focusable="false"
+				    android:text="2"
+				    android:textColor="@color/white"
+				    android:textSize="18dip"
+				    android:textStyle="bold" > 
+
+				</TextView>
+
+				<TextView
+				    android:id="@+id/total_bloodsugar_value_hb_total"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="30dp"
+				    android:layout_toRightOf="@+id/total_bloodsugar_time_hb_total"
+				    android:focusable="false"
+				    android:text="3"
+				    android:textColor="@color/orange"
+				    android:textSize="18dip"
+				    android:textStyle="bold" >
+
+				</TextView>
+<!--
+				<TextView
+					android:layout_weight="3"
+					android:textSize="18dip"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:focusable="false"
+					android:layout_toRightOf="@+id/total_bloodsugar_memo"
+					android:layout_width="0dip"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:id="@+id/total_bloodsugar_hospital_user"
+					android:text="5">
+				</TextView>
+ -->
+				<Button android:text=""
+					android:id="@+id/button_total_hosp_user_record_hb_total"	
+					android:layout_marginTop="5dp"
+					android:layout_width="16dp"
+					android:layout_centerVertical="true"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"			
+					android:focusable="false"
+					android:layout_height="16dp"></Button>
+ 
+
+			</RelativeLayout>
+
+		</TableRow>
+		<TableRow>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:id="@+id/total_relativeLayout99922_hb_total"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_height="match_parent">
+
+
+				<TextView android:textSize="18dip"
+					android:textColor="#000000"
+					android:focusable="false"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:id="@+id/total_bloodsugar_memo_hb_total"
+					android:text="4">
+				</TextView>
+
+
+
+			</LinearLayout>
+
+		</TableRow>
+
+	</TableLayout>
+
+
+
+</RelativeLayout>

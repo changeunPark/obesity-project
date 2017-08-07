@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:background="#FFFFFF"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<!-- <RelativeLayout android:layout_width="match_parent" 
+		android:layout_height="80px" android:background="@drawable/sub_title" 
+		android:id="@+id/relativeLayout2_1_result"> 
+		<TextView android:textColor="#000000" android:layout_width="match_parent" 
+		android:layout_height="wrap_content" android:layout_centerVertical="true" 
+		android:gravity="center_horizontal" android:textSize="18dip" 
+		android:textStyle="bold" android:text="비만도 
+		검사" /> </RelativeLayout> -->
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		style="@android:style/ButtonBar"
+		android:gravity="center_vertical"
+		android:id="@+id/linearLayout__5_input_1_1_title_hb">
+
+		<TextView android:gravity="center_vertical"
+			android:textColor="#FFFFFF"
+			android:textSize="20dp"
+			android:id="@+id/textView_5_title_1_4_hb"
+			android:textStyle="bold"
+			android:layout_marginLeft="10dp"
+			android:layout_width="match_parent"
+			android:layout_below="@+id/textView_5_title_1_2_hb"
+			android:layout_height="wrap_content"
+			android:text=""></TextView>
+	</LinearLayout>
+
+	<ScrollView
+		android:id="@+id/scrollview_exeinput_1_hb"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/linearLayout__5_input_1_1_title_hb"
+		android:layout_width="fill_parent">
+		<LinearLayout
+			android:id="@+id/linearLayout_exeinput_1_1_1_1_hb"
+			android:layout_width="match_parent"
+			android:paddingBottom="60dp"
+			android:layout_height="match_parent">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/relativeLayout51_input_hb">
+
+				<TextView
+					android:gravity="center_horizontal|center_vertical"
+					android:textColor="#000000"
+					android:layout_marginTop="0dp"
+					android:padding="5dp"
+					android:textSize="18dp"
+					android:layout_marginLeft="10dp"
+					android:id="@+id/textView_5_input_1_1_hb"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="당화혈색소"></TextView>
+				<EditText
+					android:singleLine="true"
+					android:textColor="#000000"
+					android:padding="5dp"
+					android:textSize="18dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:id="@+id/textView_5_input_1_2_hb"
+					android:layout_below="@+id/textView_5_input_1_1_hb"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:inputType="number"
+					android:text=""></EditText>
+
+				<TextView
+					android:gravity="center_horizontal|center_vertical"
+					android:textColor="#000000"
+					android:padding="5dp"
+					android:textSize="18dp"
+					android:layout_marginLeft="10dp"
+					android:id="@+id/textView_5_input_1_4_hb"
+					android:layout_width="wrap_content"
+					android:layout_below="@+id/textView_5_input_1_2_hb"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="메모"></TextView>
+				<EditText
+					android:textColor="#000000"
+					android:lines="1"
+					android:scrollbars="vertical"
+					android:padding="5dp"
+					android:textSize="18dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:id="@+id/textView_5_input_1_5_hb"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/textView_5_input_1_4_hb"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text=""></EditText>
+
+				<TextView
+					android:gravity="center_horizontal|center_vertical"
+					android:textColor="#000000"
+					android:padding="5dp"
+					android:textSize="18dp"
+					android:layout_marginLeft="10dp"
+					android:id="@+id/textView_5_input_1_6_hb"
+					android:layout_width="wrap_content"
+					android:layout_below="@+id/textView_5_input_1_5_hb"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="시간"></TextView>
+
+				<TimePicker android:id="@+id/timePicker_input_hb"
+					android:layout_below="@+id/textView_5_input_1_6_hb"
+					android:layout_marginTop="0dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginBottom="20dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"></TimePicker>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		style="@android:style/ButtonBar"
+		android:gravity="center_horizontal|center_vertical"
+		android:id="@+id/linearLayout__5_input_1_1_result_hb">
+
+
+		<Button android:text=""
+			android:id="@+id/button_5_input_save_hb"
+			android:background="@drawable/save_selector"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text=""
+			android:id="@+id/button_5_input_cancel_hb"
+			android:layout_marginLeft="10px"
+			android:layout_toRightOf="@+id/button_5_input_save_hb"
+			android:background="@drawable/cancel_selector"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+
+
+</RelativeLayout>

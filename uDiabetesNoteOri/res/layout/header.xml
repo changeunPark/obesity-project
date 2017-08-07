@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:gravity="center_horizontal"
+	android:layout_height="wrap_content">
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/tvfirstHead1"
+		android:textColor="#FFFFFF"
+		android:text="테스트"
+		android:layout_gravity="center_vertical|center_horizontal" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/tvfirstHead1"
+		android:id="@+id/tvSecondHead1"
+		android:textColor="#FFFFFF"
+		android:layout_gravity="center_vertical|center_horizontal" />
+</RelativeLayout>

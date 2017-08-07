@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tfoodbg"
+    android:orientation="vertical" >
+
+    <!-- 페이지 넘기기 -->
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <!-- 레이아웃 0 -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="100dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/question0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question1"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/question0_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question0"
+                android:layout_marginBottom="10dp"
+                android:text="Food craving에 대한 중독치료 프로그램으로\n노출을 통한 자가 조절 방법을 터득 할 수 있습니다."
+                android:textSize="15dp" />
+
+            <ImageButton
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/start" >
+            </ImageButton>
+        </LinearLayout>
+
+        <!-- 레이아웃 1 -->
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/question2" />
+        </RelativeLayout>
+
+        <!-- 레이아웃2 -->
+
+        <RelativeLayout
+            android:id="@+id/imagelayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/imagequestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <TextView
+                    android:id="@+id/question_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/question3" />
+            </RelativeLayout>
+
+            <!-- 이미지 버튼 직접정렬 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayoutbutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagequestion"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/foodimgbtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/desert"
+                    android:onClick="clickFood" >
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/foodimgbtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bread"
+                    android:onClick="clickFood" >
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/foodimgbtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/instant"
+                    android:onClick="clickFood" >
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/foodimgbtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/meat"
+                    android:onClick="clickFood" >
+                </ImageButton>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 디저트 이미지 3-1 -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/cho_bg"
+            android:layout_gravity="center_horizontal" >
+        </LinearLayout>
+
+        <!-- 빵이미지 4-1 --><!-- 
+            android:background="@drawable/cho_bg -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal" 
+            android:background="@drawable/bread_bg" >
+        </LinearLayout>
+        <!-- 인스턴트 이미지 5-1 -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal" 
+            android:background="@drawable/instant_bg" >
+        </LinearLayout>
+
+        <!-- 고기 이미지 6-1 -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal" 
+            android:background="@drawable/meat_bg" >
+        </LinearLayout>
+
+        <!-- 레이아웃 7 -->
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/question4" />
+
+            <RatingBar
+                android:id="@+id/ratingbar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question"
+                android:layout_centerHorizontal="true"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/ratingtext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingbar1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="" />
+        </RelativeLayout>
+
+        <!-- 레이아웃 8 -->
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/question5" />
+        </RelativeLayout>
+
+        <!-- 레이아웃 9 -->
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/question6" />
+        </RelativeLayout>
+
+        <!-- 레이아웃 10 -->
+
+        <RelativeLayout
+            android:id="@+id/imagelayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/imagequestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <TextView
+                    android:id="@+id/question_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/question8" />
+            </RelativeLayout>
+
+            <!-- 이미지 버튼 직접정렬 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayoutbutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/imagequestion"
+                android:layout_centerHorizontal="true" >
+
+                <ImageButton
+                    android:id="@+id/foodimgbtn1"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/desert"
+                    android:onClick="clickFood" >
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/foodimgbtn2"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bread"
+                    android:onClick="clickFood" >
+                </ImageButton>
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/foodimgbtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/instant"
+                    android:onClick="clickFood" >
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/foodimgbtn4"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/meat"
+                    android:onClick="clickFood" >
+                </ImageButton>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 레이아웃 11 -->
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/question4" />
+
+            <RatingBar
+                android:id="@+id/ratingbar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question"
+                android:layout_centerHorizontal="true"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/ratingtext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingbar2"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="" />
+        </RelativeLayout>
+
+        <!-- 레이아웃 12 -->
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/question11" />
+        </RelativeLayout>
+
+        <!-- 레이아웃 13 -->
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/question12" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+    <!-- 버튼 -->
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:background="#00000000"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/prev"
+            android:visibility="invisible" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/next"
+            android:visibility="invisible" >
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/nexttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/next"
+            android:layout_centerHorizontal="true"
+            android:text="다음 단계"
+            android:visibility="invisible" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/restart"
+            android:visibility="invisible" >
+        </ImageButton>
+    </RelativeLayout>
+
+</LinearLayout><!--
+주석처리
+
+<ImageButton
+		    android:id="@+id/start"
+		    android:layout_centerHorizontal="true"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@drawable/start"
+			></ImageButton>
+	<ImageButton
+		    android:id="@+id/next"
+		    android:layout_alignParentRight="true"
+   		    android:layout_marginRight="50dp"
+		    android:layout_centerHorizontal="true"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@drawable/next"
+			android:visibility="invisible"
+			></ImageButton>
+		레이아웃5
+		<RelativeLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		    <TextView
+		       android:gravity="center_horizontal"
+		        android:layout_centerVertical="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/question5"/>
+		</RelativeLayout>
+		
+		레이아웃6
+		<RelativeLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		    <TextView
+		        		        android:gravity="center_horizontal"
+		        android:layout_centerVertical="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/question6"/>
+		</RelativeLayout>
+		
+		레이아웃7
+		<RelativeLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		    <TextView
+		        		        android:gravity="center_horizontal"
+		        android:layout_centerVertical="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/question7"/>
+		</RelativeLayout>
+		
+		레이아웃 8
+		<RelativeLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		    <TextView
+		        		        android:gravity="center_horizontal"
+		        android:layout_centerVertical="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/question8"/>
+		</RelativeLayout>
+		
+		레이아웃 9
+		이미지 레이아웃 2
+		<RelativeLayout
+	android:id="@+id/imagelayout4"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_gravity="center_horizontal"
+	android:orientation="vertical">
+		    
+		    <RelativeLayout
+		        android:id="@+id/imagequestion"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_centerHorizontal="true"
+		        >
+		    <TextView
+		        android:id="@+id/choice_text"
+		        android:gravity="center"
+		        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/question3"/>    
+		    </RelativeLayout>
+		    
+	이미지 버튼 직접정렬
+	<RelativeLayout
+	    android:layout_below="@+id/imagequestion"
+		android:id="@+id/linearLayoutbutton1"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_centerHorizontal="true"
+		>
+		<ImageButton
+		    android:id="@+id/foodimg1"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@drawable/desert"
+			android:onClick="clickFood"
+			></ImageButton>
+		<ImageButton
+		    android:id="@+id/foodimg2"
+		    android:layout_toRightOf="@+id/foodimg1"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@drawable/bread"
+			android:onClick="clickFood"
+			></ImageButton>
+		<ImageButton
+		    android:id="@+id/foodimg3"
+		     android:layout_toRightOf="@+id/foodimg2"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@drawable/instant"
+			android:onClick="clickFood"
+			></ImageButton>
+		<ImageButton
+		    android:id="@+id/foodimg4"
+		    android:layout_toRightOf="@+id/foodimg3"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@drawable/meat"
+			android:onClick="clickFood"
+			></ImageButton>
+		
+	</RelativeLayout> 
+	
+	
+	
+	</RelativeLayout>
+		레이아웃 10
+		<RelativeLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		    <TextView
+		        		        android:gravity="center_horizontal"
+		        android:id="@+id/question"
+		        android:layout_centerVertical="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/question4"/>
+		    <RatingBar
+		        android:layout_centerHorizontal="true"
+		        android:id="@+id/ratingbar"
+		        android:layout_below="@+id/question"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:stepSize="1"
+				/>		
+				<TextView
+				    		        android:gravity="center_horizontal"
+		        android:layout_centerHorizontal="true"
+		        android:id="@+id/ratingtext"
+		        android:text=""
+		        android:layout_below="@+id/ratingbar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				/>	    
+		</RelativeLayout>
+		
+		레이아웃 11
+		<RelativeLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		    <TextView
+		        		        android:gravity="center_horizontal"
+		        android:layout_centerVertical="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/question11"/>
+		</RelativeLayout>
+		
+		<RelativeLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		    <TextView
+		        		        android:gravity="center_horizontal"
+		        android:layout_centerVertical="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/question12"/>
+		</RelativeLayout>
+		
+		
+		디저트 페이지
+		
+	<RelativeLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		    <TextView
+		        		        android:gravity="center_horizontal"
+		        android:layout_centerVertical="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="디저트페이지"/>
+		</RelativeLayout>
+-->
+
+
+<!-- 레이아웃 4 -->
+<!--
+         	<RelativeLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		    
+		</RelativeLayout>
+-->
+<!--
+    	<RadioGroup
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/radiofood">
+			<RadioButton
+				android:text="하양"
+				android:layout_width="wrap_content"
+				android:id="@+id/food0"
+				android:checked="true"
+				android:layout_height="wrap_content"></RadioButton>
+			<RadioButton
+				android:text="빨강"
+				android:layout_width="wrap_content"
+				android:id="@+id/food1"
+				android:layout_height="wrap_content"></RadioButton>
+			<RadioButton
+				android:text="블루"
+				android:layout_width="wrap_content"
+				android:id="@+id/food2"
+				android:layout_height="wrap_content"></RadioButton>
+		</RadioGroup>
+-->
+<!--
+     	<LinearLayout
+		android:id="@+id/linearLayout0"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical">
+		<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="1"/>
+					android:visibility="invisible"
+		
+		</LinearLayout>
+-->
+
+
+<!--
+		<LinearLayout
+			android:id="@+id/linearLayout2"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:background="#ff0000"></LinearLayout>
+		<LinearLayout
+			android:id="@+id/linearLayout3"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:background="#00ff00"></LinearLayout>
+		<LinearLayout
+			android:id="@+id/linearLayout4"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:background="#0000ff"></LinearLayout>
+-->
